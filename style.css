@@ -18,7 +18,8 @@ body {
 
 
 .sidebar {
-    width: 360px;
+    /* width: 360px; */
+    width: 120px;
     height: 100%;
     background: rgba(10,10,10, .65);
     box-shadow: 0 8px 32px rgb(2, 4, 24);
@@ -30,16 +31,16 @@ body {
 
 .sidebar .logo {
     width: 100%;
-    height: 240px;
-    padding: 20px 0;
+    height: 160px;
+    padding: 10px 0;
     display: grid;
     justify-items: center;
     align-items: center;
 }
 
-.sidebar img {
-    width: 100px;
-    height: 100px;
+.logo img {
+    /* width: 56px; */
+    width: 96px;
 }
 
 .logo h3 {
@@ -48,15 +49,18 @@ body {
     /* margin-top: 12px; */
     font-variant: small-caps;
     pointer-events: none;
-    /* opacity: 0;
-    scale: 0; */
+    opacity: 0;
+    scale: 0;
 
 }
 
 .sidebar .nav-title {
     color: #dadada;
-    margin: 20px 0 18px;
+    font-size: 18px;
+    margin: 10px 0 18px;
     pointer-events: none;
+    text-transform: uppercase;
+    opacity: 0;
 }
 
 .sidebar nav {
@@ -70,18 +74,20 @@ body {
     justify-content: flex-start;
     border-radius: 4px;
     width: 100%;
-    height: 56px;
+    height: 45px;
     padding: 0 16px;
-    margin: 8px 0;
-    color: white;
+    /* margin: 8px 0; */
+    color: white;    
+    transition: 0.3s;
 }
+
 
 .sidebar nav .nav-item.active {
     background: #ff328e;
 }
 
 .sidebar nav .nav-item:hover{
-    background: rgba(255, 255, 255, .1)
+    background: rgba(255, 255, 255, .1);
 }
 
 .sidebar nav .nav-item i {
@@ -93,4 +99,14 @@ body {
     font-size: 18px;
     margin-left: 8px;
     pointer-events: none;
+    opacity: 0;
+}
+
+.sidebar hr {
+    width: 100%;
+    height: 2px;
+    border-radius: 3px;
+    margin: 40px 0 50px;
+    background: rgba(255, 255, 255, .1);
+    opacity: 0;
 }
